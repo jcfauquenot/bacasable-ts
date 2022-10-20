@@ -1,16 +1,11 @@
 import { Routes, Route, useParams } from "react-router-dom";
 import Hello from "./components/Hello";
+import Form from "./components/Form";
 const Main = () => {
-  function BlogPost() {
-    let { slug } = useParams();
-    return <div>Now showing post {slug}</div>;
-  }
-
   return (
     <Routes>
-      <Route path="/" element={<Hello didi="sdsqsd" />}>
-        <BlogPost />
-      </Route>
+      <Route path="/" element={<Hello didi="sdsqsd" />}></Route>
+      <Route path="/formulaire" element={<Form />}></Route>
     </Routes>
   );
 };

@@ -16,6 +16,9 @@ const App: React.FC = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
+          <li>
+            <Link to="/formulaire">formulaire</Link>
+          </li>
         </ul>
       </div>
       <Menu />
